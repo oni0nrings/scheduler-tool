@@ -13,17 +13,22 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 1. Clone the repository
-```sh
-git clone https://github.com/oni0nrings/scheduler-tool.git
+
+   ```screen
+   git clone https://github.com/oni0nrings/scheduler-tool.git
+   ```
 
 2. Navigate to the project directory
-```sh
-cd schedule-generator```
+
+   ```screen
+   cd schedule-generator
+   ```
 
 3. Run the script
-```sh
-python main.py
-```
+
+   ```screen
+   python main.py
+   ```
 
 ## Usage
 
