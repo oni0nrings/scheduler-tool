@@ -6,8 +6,12 @@ def get_quarter_start_end_dates(year, quarter):
     quarters_start_dates = [(11, 1), (2, 1), (5, 1), (8, 1)]
 
     # Calculate the start and end dates for the current quarter
-    start_date = datetime(year if quarter > 1 else year - 1, *quarters_start_dates[quarter - 1])
-    end_date = datetime(year if quarter < 4 else year + 1, *quarters_start_dates[quarter % 4]) - timedelta(days=1)
+    start_date = datetime(
+        year if quarter > 1 else year - 1, *quarters_start_dates[quarter - 1]
+    )
+    end_date = datetime(
+        year if quarter < 4 else year + 1, *quarters_start_dates[quarter % 4]
+    ) - timedelta(days=1)
 
     return start_date, end_date
 
